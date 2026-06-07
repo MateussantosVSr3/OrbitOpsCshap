@@ -47,15 +47,6 @@ Módulo Cyber Security: Integração de rotina de verificação estática (Cript
 
 ---
 
-## PASSO 6: O Diagrama de Fluxos Exigido
+## Diagrama
 
-Para garantir os **5 pontos do Diagrama de fluxos** pedidos no edital, desenhe em qualquer ferramenta visual (Draw.io, Figma, Lucidchart) um fluxo linear simples contendo os seguintes passos do código:
-1. **Início** -> Recebimento dos Dados de Telemetria.
-2. **Camada Cyber** -> Geração da Assinatura Criptográfica do Payload.
-3. **Validação de Sinal** -> Bloco de Decisão: *O sinal está ativo?*
-   * *Se NÃO:* Dispara `FalhaSinalSateliteException` -> Captura pelo Bloco `Catch` -> Log de Erro Crítico -> Fim.
-   * *Se SIM:* Segue para a validação de subsistemas.
-4. **Análise de Métricas** -> Bloco de Decisão: *Temperatura > 55°C ou Energia < 15%?*
-   * *Se SIM:* Ativa Modo de Segurança no Satélite -> Exibe Alerta Operacional no Console.
-   * *Se NÃO:* Mantém Status Nominal Operacional.
-5. **Fim** -> Log de encerramento da auditoria de rotina com data e hora atualizadas.
+![](csharp.png)
